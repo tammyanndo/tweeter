@@ -26,7 +26,7 @@ textarea {
   outline: none;
   box-shadow: none;
   overflow: auto ;
-  resize: none;
+  resize: auto;
   background-image: url("https://www.seekpng.com/png/full/242-2423889_pencil-pencil-line-icon-png.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
@@ -35,7 +35,8 @@ textarea {
   padding-top: 18px;
   margin-bottom: 0%;
   background-color: #f4f1ec;
-  line-height: 14px
+  line-height: 14px;
+  font-size: 17px;
 }
 
 textarea::placeholder {
