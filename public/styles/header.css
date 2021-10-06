@@ -1,0 +1,16 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  height: 400px;
+  width: 100%;
+}
+
+.profile-header {
+  width: 100%;
+background-color: #E1C49A;
+background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}

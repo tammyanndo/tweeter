@@ -1,0 +1,51 @@
+.new-tweet {
+  width: 100%
+}
+.input-form {
+  width: 100%;
+}
+
+.submit-tweet {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebb891;
+  color: blanchedalmond;
+  border: 2px solid slategrey;
+  font-family: Bungee, sans-serif;
+}
+.submit-tweet:hover {
+  background-color: #f4f1ec;
+  color: #D98D88;
+}
+
+textarea {
+  width: 100%;
+  border-style: none;
+  border-color: transparent;
+  border-bottom: 2px solid grey;
+  outline: none;
+  box-shadow: none;
+  overflow: auto ;
+  resize: none;
+  background-image: url("https://www.seekpng.com/png/full/242-2423889_pencil-pencil-line-icon-png.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-left: 60px;
+  padding-top: 18px;
+  margin-bottom: 0%;
+  background-color: #f4f1ec;
+  line-height: 14px
+}
+
+textarea::placeholder {
+  padding-left: 8px;
+  padding-top: 3px;
+}
+
+.counter-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
