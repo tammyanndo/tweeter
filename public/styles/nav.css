@@ -1,4 +1,6 @@
 nav {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -23,13 +25,13 @@ i.fas.fa-angle-double-down {
   color: #EBB891;
 }
 
-.new-tweet {
+.header-tag {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1em;
-  /* padding-top: 1em; */
-  margin-bottom: -1px
+  padding-top: .4em;
+  margin-bottom: -2px
 }
 
 .nav-write-tweet {

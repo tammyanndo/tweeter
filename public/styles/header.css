@@ -10,7 +10,8 @@
 }
 
 .profile-header {
+  padding-top: 125px;
   width: 100%;
-background-color: #E1C49A;
-background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  background-color: #E1C49A;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 }

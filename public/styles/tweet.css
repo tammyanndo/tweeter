@@ -1,0 +1,81 @@
+article {
+  border: grey;
+  border-style: solid;
+  width: 100%;
+  padding: 16px;
+  margin: 1px;
+  margin-top: 32px;
+  /* height: 165px; */
+  transition: box-shadow .3s;
+}
+
+article:hover {
+  box-shadow: 3px 3px 0px #D98D88;
+}
+
+.right-side-header {
+  display: flex;
+  font-size: 20px;
+}
+
+.avatar {
+  width: 36px;
+  margin-right: 8px;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+}
+
+.name {
+  height: 32px;
+  margin: 1px;
+}
+
+.handle {
+  height: 32px;
+  margin: 1px;
+  font-size: 20px;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.time {
+  font-size: 16px;
+  margin: 0px
+}
+
+.tweet-text {
+  width: 100%;
+  border-bottom: 2px solid grey;
+  margin-top: 24px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.fas.fa-flag {
+  font-size: 16px;
+}
+.fas.fa-retweet {
+  font-size: 16px;
+}
+.far.fa-heart {
+  font-size: 16px;
+}
+
+.fas.fa-flag:hover {
+  color: #D98D88;
+}
+.fas.fa-retweet:hover {
+  color: #D98D88;
+}
+.far.fa-heart:hover {
+  color: #D98D88;
+}
