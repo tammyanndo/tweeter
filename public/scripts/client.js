@@ -60,7 +60,7 @@ $(document).ready(function () {
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     };
   };
 
@@ -85,6 +85,8 @@ $(document).ready(function () {
     if (dataLength > 140) {
       return alert(`You have exceeded the 140 character limit by ${overBy} characters.`)
     } 
+    // the second if statement does not work; 
+    // if the textarea is left blank, an alert is not made
     if (dataLength === 0 ) {
       return alert('Your tweet is blank.')
     }
