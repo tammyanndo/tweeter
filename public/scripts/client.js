@@ -96,7 +96,8 @@ $(document).ready(function () {
         loadTweets()
         $('textarea').val("");
       })
-    }
+    } 
+    $(".counter").val(140)
     })
     })
 

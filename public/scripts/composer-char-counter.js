@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  
-  $("#tweet-text").keyup(function() {
+
+  $("#tweet-text").on('input propertychange',  function() {
     const charCount = $(this).val().length;
     const charsRemaining = 140 - charCount;
     console.log("charCount:", charCount);
