@@ -34,12 +34,8 @@ body {
 
 }
 
-
-
-
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.main-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -53,7 +53,7 @@ $(document).ready(function () {
       </div>
     </div>
   </article>`
-  
+
   return newTweet;
   }
 
@@ -68,40 +68,61 @@ $(document).ready(function () {
     $.ajax('/tweets', { method: 'GET'}) 
     .then(function(response) {
       renderTweets(response)
-      console.log('Success:', response )
     })
   }
 
   $( ".input-form" ).submit(function( event ) {
     event.preventDefault();
-    console.log('i am in submit tweet')
 
-    let data = $(this).serialize();
-    console.log("this is the serialized data:", data)
+    let text = $(this).find('textarea').val()
 
-    let dataLength = data.length;
-    const overBy = 140 - dataLength
+    let data = $(this.text).serialize();
+
+    let dataLength = (text.length);
 
     if (dataLength > 140) {
-      return alert(`You have exceeded the 140 character limit by ${overBy} characters.`)
+      return errorMessage('char over 140')
     } 
-    // the second if statement does not work; 
-    // if the textarea is left blank, an alert is not made
-    if (dataLength === 0 ) {
-      return alert('Your tweet is blank.')
-    }
 
-    $.post('/tweets', data, function() {
-      console.log('this is the post request')
-      $('#tweets-container').empty()
-      loadTweets()
-      $('textarea').val("");
+    console.log("datalength", dataLength)
+    if (dataLength === 0 ) {
+      return errorMessage('null')
+    } else {
+      errorMessage('none')
+      
+      $.post('/tweets', data, function() {
+        console.log('this is the post request')
+        $('#tweets-container').empty()
+        loadTweets()
+        $('textarea').val("");
+      })
+    }
     })
     })
-});
 
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
+// error message using jQuery slide down animation
+const errorMessage = error => {
+// if char count is over 140
+  if (error === 'char over 140') {
+    $(".error-message").slideUp()
+    $(".error-message").empty()
+    $(".error-message").append(`<p>You have exceeded the 140 character limit.</p>`)
+    $(".error-message").slideDown("slow")
+  }
+// if char count is null
+  if (error === 'null') {
+    $(".error-message").slideUp()
+    $(".error-message").empty()
+    $(".error-message").append(`<p>Your tweet is blank.</p>`)
+    $(".error-message").slideDown("slow")
+  } 
+  if (error === 'none') {
+    $(".error-message").slideUp()
+  }
+}
