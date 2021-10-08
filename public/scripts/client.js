@@ -42,7 +42,7 @@ $(document).ready(function () {
       <span class="handle">${tweet.user.handle}</span>
     </header>
     <div>
-      <h4 class="tweet-text">${tweet.content.text}</h4>
+      <h4 class="tweet-text">${escape(tweet.content.text)}</h4>
     </div>
     <div class="tweet-footer">
       <h6 class="time">${timeago.format(tweet.created_at)}</h6>
@@ -99,3 +99,9 @@ $(document).ready(function () {
     })
     })
 });
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
