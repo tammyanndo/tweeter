@@ -8,6 +8,7 @@ Users can enter their tweet into the text field, and if the number of characters
 * Users can input their tweet, and post it without refreshing the page
 * Tweets are listed with the most recent tweet at the top
 * Users are alerted if they are not within the character limits, either 0 or over 140 characters
+* Once the tweet is successfully submitted, the counter is reset to 140
 * The application has been formatted with responsive design for use on tablets and mobile devices
 
 ## Sample Images from Tweeter:
