@@ -5,10 +5,10 @@ Tweeter is a simple, single-page Twitter clone, built to demonstrate front-end s
 Users can enter their tweet into the text field, and if the number of characters are within the character limit of 140, the tweet will be added below. If not within the character limits, an error message will appear. 
 
 ## Tweeter Features
-*Users can input their tweet, and post it without refreshing the page
-*Tweets are listed with the most recent tweet at the top
-*Users are alerted if they are not within the character limits, either 0 or over 140 characters
-*The application has been formatted with responsive design for use on tablets and mobile devices
+* Users can input their tweet, and post it without refreshing the page
+* Tweets are listed with the most recent tweet at the top
+* Users are alerted if they are not within the character limits, either 0 or over 140 characters
+* The application has been formatted with responsive design for use on tablets and mobile devices
 
 ## Sample Images from Tweeter:
 
@@ -23,12 +23,12 @@ Users can enter their tweet into the text field, and if the number of characters
 
 ## Dependencies
 ```
-*Express
-*Node 5.10.x or above
-*Body-parser
-*Chance
-*Timeago
-*md5
+* Express
+* Node 5.10.x or above
+* Body-parser
+* Chance
+* Timeago
+* md5
 ```
 ## Getting Started
 
