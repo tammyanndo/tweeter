@@ -39,11 +39,3 @@ i.fas.fa-angle-double-down {
   flex-direction: column;
   align-items: center;
 }
-
-@media only screen and (max-width: 768px) {
-  nav {
-    background-color: #E1C49A;
-    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
-  }
-
-}

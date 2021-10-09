@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // --- our code goes here ---
 
   $("#tweet-text").on('input propertychange',  function() {
     const charCount = $(this).val().length;
