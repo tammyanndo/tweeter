@@ -23,12 +23,12 @@ Users can enter their tweet into the text field, and if the number of characters
 
 ## Dependencies
 ```
-* Express
-* Node 5.10.x or above
-* Body-parser
-* Chance
-* Timeago
-* md5
+- Express
+- Node 5.10.x or above
+- Body-parser
+- Chance
+- Timeago
+- md5
 ```
 ## Getting Started
 
