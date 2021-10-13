@@ -10,7 +10,7 @@ $(document).ready(function() {
     if (charsRemaining < 0) {
       counter.css({'color': 'pink'});
     }
-    if (charsRemaining > 0) {
+    if (charsRemaining >= 0) {
       counter.css({'color': 'black'})
     }
 

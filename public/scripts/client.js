@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
   const createTweetElement = tweet => {
     const newTweet =
       `<article>
@@ -40,6 +41,8 @@ $(document).ready(function () {
       })
   }
 
+  loadTweets();
+
   $(".input-form").submit(function (event) {
     event.preventDefault();
 
@@ -53,14 +56,12 @@ $(document).ready(function () {
       return errorMessage('char over 140')
     }
 
-    console.log("datalength", dataLength)
     if (dataLength === 0) {
       return errorMessage('null')
     } else {
       errorMessage('none')
 
       $.post('/tweets', data, function () {
-        console.log('this is the post request')
         $('#tweets-container').empty()
         loadTweets()
         $('textarea').val("");
@@ -95,4 +96,5 @@ const errorMessage = error => {
   if (error === 'none') {
     $(".error-message").slideUp()
   }
+
 }
